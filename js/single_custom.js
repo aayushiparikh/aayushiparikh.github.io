@@ -316,4 +316,36 @@ jQuery(document).ready(function($)
 			});
 		}
 	}
+	
+	/*
+	
+		8. Init Tabs
+
+	*/
+
+	function initTabs2()
+	{
+		if($('.tabs2').length)
+		{
+			var tabs2 = $('.tabs2 li');
+			var tabContainers2 = $('.tab2_container');
+
+			tabs.each(function()
+			{
+				var tab2 = $(this);
+				var tab2_id = tab2.data('active-tab2');
+
+				tab2.on('click', function()
+				{
+					if(!tab2.hasClass('active'))
+					{
+						tabs2.removeClass('active');
+						tab2Containers.removeClass('active');
+						tab2.addClass('active');
+						$('#' + tab2_id).addClass('active');
+					}
+				});
+			});
+		}
+	}
 });
