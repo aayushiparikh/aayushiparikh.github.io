@@ -351,9 +351,9 @@ jQuery(document).ready(function($)
 	
 	/*
 	
-		8. Init Tabs2
+		8. Init Tabs3
 
-	*/
+	
 
 	function initTabs()
 	{
@@ -379,5 +379,5 @@ jQuery(document).ready(function($)
 				});
 			});
 		}
-	}
+	} */
 });
