@@ -53,6 +53,8 @@ jQuery(document).ready(function($)
 	initStarRating();
 	initFavorite();
 	initTabs();
+	initTabs2();
+	initTabs3();
 
 	/* 
 
@@ -323,7 +325,7 @@ jQuery(document).ready(function($)
 
 	*/
 
-	function initTabs()
+	function initTabs2()
 	{
 		if($('.tabs2').length)
 		{
@@ -353,9 +355,9 @@ jQuery(document).ready(function($)
 	
 		8. Init Tabs3
 
-	
+	*/
 
-	function initTabs()
+	function initTabs3()
 	{
 		if($('.tabs3').length)
 		{
@@ -379,5 +381,5 @@ jQuery(document).ready(function($)
 				});
 			});
 		}
-	} */
+	} 
 });
