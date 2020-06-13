@@ -1481,6 +1481,103 @@ section
 }
 
 /*********************************
+7. Tabs3
+*********************************/
+
+.tabs3_section_container
+{
+	width: 100%;
+	padding-bottom: 80px;
+	border-bottom: solid 1px #ebebeb;
+}
+.tabs3_container
+{
+	margin-top: 66px;
+	margin-bottom: 66px;
+}
+.tabs3
+{
+
+}
+.tab3
+{
+	margin-right: 50px;
+	cursor: pointer;
+}
+.tab3:last-child
+{
+	margin-right: 0px;
+}
+.tab3 span
+{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #1e1e27;
+}
+.tab3:hover span
+{
+	color: #b5aec4;
+}
+.tab3.active span
+{
+	color: #fe4c50;
+	border-bottom: solid 1px #fe4c50;
+}
+.tab3_container
+{
+	width: 100%;
+	display: none;
+}
+.tab3_container.active
+{
+	display: block;
+}
+
+/*********************************
+7.1 Description
+*********************************/
+
+.desc3_col
+{
+
+}
+.tab3_title
+{
+	margin-bottom: 98px;
+}
+.tab3_title h4
+{
+	display: inline-block;
+	color: #fe4c50;
+	border-bottom: solid 1px #fe4c50;
+}
+.tab3_text_block
+{
+	margin-bottom: 133px;
+}
+.tab3_text_block p
+{
+	font-weight: 400;
+	margin-top: 10px;
+}
+.tab3_image
+{
+	width: 100%;
+	margin-bottom: 131px;
+}
+.tab3_image img
+{
+	width: 100%;
+}
+.desc3_last
+{
+	margin-bottom: 0px;
+}
+
+
+/*********************************
 8. Add Review
 *********************************/
 

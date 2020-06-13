@@ -319,7 +319,7 @@ jQuery(document).ready(function($)
 	
 	/*
 	
-		8. Init Tabs
+		8. Init Tabs2
 
 	*/
 
@@ -334,6 +334,38 @@ jQuery(document).ready(function($)
 			{
 				var tab = $(this);
 				var tab_id = tab.data('active-tab2');
+
+				tab.on('click', function()
+				{
+					if(!tab.hasClass('active'))
+					{
+						tabs.removeClass('active');
+						tabContainers.removeClass('active');
+						tab.addClass('active');
+						$('#' + tab_id).addClass('active');
+					}
+				});
+			});
+		}
+	}
+	
+	/*
+	
+		8. Init Tabs2
+
+	*/
+
+	function initTabs()
+	{
+		if($('.tabs3').length)
+		{
+		var tabs = $('.tabs3 li');
+			var tabContainers = $('.tab3_container');
+
+			tabs.each(function()
+			{
+				var tab = $(this);
+				var tab_id = tab.data('active-tab3');
 
 				tab.on('click', function()
 				{
