@@ -323,26 +323,26 @@ jQuery(document).ready(function($)
 
 	*/
 
-	function initTabs2()
+	function initTabs()
 	{
 		if($('.tabs2').length)
 		{
-			var tabs2 = $('.tabs2 li');
-			var tabContainers2 = $('.tab2_container');
+			var tabs = $('.tabs2 li');
+			var tabContainers = $('.tab2_container');
 
 			tabs.each(function()
 			{
-				var tab2 = $(this);
-				var tab2_id = tab2.data('active-tab2');
+				var tab = $(this);
+				var tab_id = tab.data('active-tab2');
 
-				tab2.on('click', function()
+				tab.on('click', function()
 				{
-					if(!tab2.hasClass('active'))
+					if(!tab.hasClass('active'))
 					{
-						tabs2.removeClass('active');
-						tab2Containers.removeClass('active');
-						tab2.addClass('active');
-						$('#' + tab2_id).addClass('active');
+						tabs.removeClass('active');
+						tabContainers.removeClass('active');
+						tab.addClass('active');
+						$('#' + tab_id).addClass('active');
 					}
 				});
 			});
